@@ -1,0 +1,25 @@
+
+main{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.login{
+  width: 100%;
+  max-width: 330px;
+  text-align: center;
+}
+.login img{
+  width: 40%;
+}
+
+mat-form-field, button{
+  width: 85%;
+}
+
+.spinner{
+  margin: 0 auto 10px;
+
+}

@@ -1,0 +1,21 @@
+
+<main>
+
+  <div class="login">
+    <mat-spinner diameter="40" class="spinner" *ngIf="louding"></mat-spinner>
+    <form *ngIf="!louding" [formGroup]="form" (ngSubmit)="ingresar()">
+      <img src="./assets/images/user.png" alt="">
+      <h1>Login</h1>
+      <mat-form-field appearance="fill">
+        <mat-label>Usuario</mat-label>
+        <input matInput type="text" formControlName="usuario" required>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" formControlName="password" required>
+      </mat-form-field>
+      <button type="submit" mat-flat-button color="primary">Go!</button>
+    </form>
+  </div>
+</main>
+
